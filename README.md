@@ -1,4 +1,5 @@
-# Template Inicial Jest - Método TAJS - Erick Wendel
+# Repositório dedicado ao curso - Método TAJS - Erick Wendel
+# Conceitos avançados sobre Testes Automatizados 
 
 - [x] - Trabalha com ES Modules
 - [x] - Possui live reload
