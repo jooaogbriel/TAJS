@@ -1,5 +1,6 @@
 # Repositório dedicado ao curso - Método TAJS - Erick Wendel
 # Conceitos avançados sobre Testes Automatizados 
+stubs
 
 - [x] - Trabalha com ES Modules
 - [x] - Possui live reload
