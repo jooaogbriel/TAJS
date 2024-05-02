@@ -1,8 +1,6 @@
-import { describe, it, expect, beforeEach, jest } from '@jest/globals'
-import Service from '../src/service.js'
+import { beforeEach, describe, expect, it, jest } from '@jest/globals'
 import fs from 'node:fs/promises'
-
-
+import Service from '../src/service.js'
 
 describe('Service Test Suite', () => {
     let _service

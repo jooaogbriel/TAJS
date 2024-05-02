@@ -15,7 +15,7 @@ class Person {
     }
 
     static save (person) {
-        if(!['cpf', 'name', 'lastName'].every(prop => person[prop])){
+        if(!['cpf', 'name', 'lastName'].every(prop => person[prop])){ // O método every() testa se todos os elementos do array passam pelo teste implementado pela função fornecida. Este método retorna um valor booleano.
             throw new Error(`cannot save invalid person: ${JSON.stringify(person)}`)
         }
         console.log('Registrado com sucesso!', person)
