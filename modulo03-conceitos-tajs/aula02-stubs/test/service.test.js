@@ -17,7 +17,6 @@ describe('Service Test Suite', () => {
                 fs,
                 fs.readFile.name
             )
-            // .mockRejectedValue('aeee')
             .mockResolvedValue('')
 
             const result = await _service.read()
@@ -68,7 +67,6 @@ describe('Service Test Suite', () => {
             // Assert
             const expected = dbData.map(({ password, ...rest }) => ({ ...rest }))
             expect(result).toEqual(expected)
-
         })
     })
 })
