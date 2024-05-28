@@ -16,10 +16,16 @@ async function setupNodeEvents(on, config) {
   return config
 }
 
+const {WEB_SERVER_URL} =  process.env
+if(!WEB_SERVER_URL){
+    console.error('Missing WEB_SERVER_URL environment variable!')
+    process.exit(1)
+}
+
 export default defineConfig({
   e2e: {
     setupNodeEvents,
     specPattern: 'cypress/e2e/features/*.feature',
-    // baseUrl: '',
+    baseUrl: WEB_SERVER_URL,
   },
 });

@@ -37,7 +37,7 @@ describe('View test suite', () => {
                         </figcaption>
                     </figure>
                 </div>
-            </article>
+        </article>
         `
         view.updateList([data])
         expect(innerHTMLSpy).toHaveBeenNthCalledWith(1, baseHTML + content)
